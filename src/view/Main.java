@@ -23,7 +23,6 @@ public class Main {
 		queue.insert(12);
 		queue.insert(14);
 
-	
 		System.out.println(queue.remove());
 		stack.push(queue.remove());
 		stack.push(queue.remove());
@@ -34,7 +33,19 @@ public class Main {
 		stack.push(queue.remove());
 		stack.push(queue.remove());
 		stack.push(queue.remove());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		queue.insert(queue.remove());
+		queue.insert(queue.remove());
+		queue.insert(stack.pop());
+		stack.push(queue.remove());
+		stack.push(queue.remove());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
 		
+		System.out.println();
+		System.out.println(queue);
 	}
 
 }
